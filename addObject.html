@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Article</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/script/scriptAdd.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid ">
+              <a class="navbar-brand color-ele-nav" href="#">
+                <img src="assets/img/phone-vibrate.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top color-ele-nav">
+                Telephones
+              </a>
+              <a href="homePage.html"><button id="newObject" type="button" class="btn btn-outline-primary">HomePage</button></a>
+
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div id="addObjContainer" class="container-md justify-content-center my-4 w-75 m-auto">
+            <h3 class="my-3 color-ele-nav">Aggiungi nuovo articolo</h3>
+            <div id="editObjContainer" class="container-md justify-content-center my-4 w-50 m-auto">
+                <h3 id="titleEdit" class="my-3 color-ele-nav"></h3>
+                <div class="visually-hidden" id="modalAdd">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Operazione Confermata</h1>
+                        </div>
+                        <div  id="textAddMdl" class="modal-body">
+                        </div>
+                        <div class="modal-footer">
+                          <a href="homePage.html"><button class="btn btn-outline-primary">HomePage</button></a>
+                          <a href="addObject.html"><button class="btn btn-outline-primary">Aggiungi altro articolo</button></a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <form id="formAdd" class="row row-cols-1 row-cols-sm-1 gx-1 row-cols-lg-2 g-3 justify-content-between">
+                    <div class="col my-3">
+                      <label for="name" class="form-label d-block me-2">Articolo</label>
+                      <input type="text"  id="name" required>
+                    </div>
+                    <div class="col my-3">
+                        <label for="description" class="form-label d-block">Descrizione</label>
+                        <input type="text"  id="description" required>
+                    </div>                  
+                    <div class="col-sm-12 col-lg-12 my-3">
+                        <label for="imgUrl" class="form-label d-block">Url Image</label>
+                        <input type="text"  id="imgUrl" class="w-100" required>
+                    </div>
+                    <div class="col my-3">
+                        <label for="price" class="form-label d-block">Prezzo</label>
+                        <input type="number"  id="price" required>
+                    </div> 
+                    <div class="col my-3">
+                        <label for="brand" class="form-label d-block">Brand</label>
+                        <input type="text"  id="brand" required>
+                    </div>                   
+                    <div class="col-sm-12 col-lg-12">
+                      <button id="btnAdd" class="btn btn-outline-primary" type="button">Aggiungi articolo</button>
+                      <button class="btn btn-outline-primary my-1 me-2" type="reset">Reset</button>
+
+                    </div>
+                </form>                
+            </div>               
+    </main>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>    
+</body>
+</html>
